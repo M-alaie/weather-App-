@@ -22,6 +22,10 @@
 
 import axios from 'axios';
 
+const API_KEYS=(import.meta.env.VITE_API_KEY)
+console.log(API_KEYS);
+
+
 async function getWeatherData(endponit,place_id,measurmenSystem) {
 
 const options = {
@@ -33,7 +37,7 @@ const options = {
     units: measurmenSystem
   },
   headers: {
-    'x-rapidapi-key': '0f39a5c798msh219b74c750ccde2p10f53bjsn1e9155726da6',
+    'x-rapidapi-key': API_KEYS,
     'x-rapidapi-host': 'ai-weather-by-meteosource.p.rapidapi.com'
   }
 };
@@ -62,7 +66,7 @@ const options = {
     language: 'en'
   },
   headers: {
-    'x-rapidapi-key': '0f39a5c798msh219b74c750ccde2p10f53bjsn1e9155726da6',
+    'x-rapidapi-key': API_KEYS,
     'x-rapidapi-host': 'ai-weather-by-meteosource.p.rapidapi.com'
   }
 };
