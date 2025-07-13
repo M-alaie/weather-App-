@@ -3,7 +3,7 @@ export const DEAFAULT_PLACE = {
   place_id: "london-4298960",
   adm_area1: "Kentucky",
   adm_area2: "Laurel",
-  country: "United States of America",
+  country: "United States of Kingdom",
   lat: "37.12898N",
   lon: "84.08326W",
   timezone: "America/New_York",
